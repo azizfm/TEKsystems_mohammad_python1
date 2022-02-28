@@ -4,7 +4,8 @@ A class is a structure that allows you to combine the data and functionality ass
 class Arithmetic:
 
     #def __init__(self, number1=10, number2=20):
-    def __init__(self, number1=4, number2=8):
+    #def __init__(self, number1=4, number2=8):
+    def __init__(self, number1=100, number2=200):
         # Idea behind this logic is to ensure number2 is greater or equal to number1.
         if(number1 > number2):
             self.number2 = number1
@@ -35,6 +36,9 @@ class Arithmetic:
         print(self)
 
 
+
+
+'''
 print("-----Practice ---Example of a 'class' ----------")
 
 class Computer:
@@ -45,3 +49,4 @@ com1 = Computer()
 Computer.config(com1)
 print('--or--')
 com1.config()
+'''

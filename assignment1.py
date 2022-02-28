@@ -10,17 +10,15 @@ Use comments to explain:
     • What classes are used for in the program
     
     Writing comments will remind you what your code does when you return to it later. Comments also help teams of programmers collaborate effectively.
-'''
-from typing import List
 
-'''
+
     This is a multi-line 
     comment in Python
 '''
 
 # Print to console
-from array import array
-from operator import le
+# from array import array
+# from operator import le
 
 print("This is my first print statement")
 
@@ -33,6 +31,13 @@ In Python, a variable is a name attached to a piece of data. You first define a 
 '''
 
 # Initialize two string variables
+'''
+Replaced string name 'John' to my name.  Similarly relaced my last name from 'Doe'.
+Also added my age on top of the first name, age entered as an integer.
+'''
+
+# TODO: Try introducing yourself and add your age as well. On top of first_name & last_name variable add another variable called my_age and set it to a number.
+# Then try concatenating it using the above four strategies.
 
 my_age = 99
 first_name = "Aziz"
@@ -48,7 +53,10 @@ You can perform many actions with strings:
 • Replacing some characters in a string
 In Python, strings are enclosed using single or double quotes.
 '''
-# Concatenate strings
+# Concatenate strings using the four method provided below
+# Converted the initial print statement to a comment line using # sign
+# Result only displays the final print line.
+
 print('-----------Concatenate string using 4 given methods--------')
 print()
 # print("Hi, my name and age is " + first_name + " " + last_name)
@@ -65,10 +73,6 @@ print("Hi, my name and age is {0}".format(" ".join([first_name, last_name, str(m
 # using format() to concatenate
 # print("Hi, my name and age is {} {} {}".format(first_name, last_name, my_age))
 print(f'Hi, my name and age is {first_name} {last_name} {my_age}')
-
-# TODO: Try introducing yourself and add your age as well. On top of first_name & last_name variable add another variable called my_age and set it to a number.
-# Then try concatenating it using the above four strategies.  
-
 
 print("-------------------------------------------------------------------------------\n")
 
@@ -144,7 +148,7 @@ A while loop runs as long as a certain condition is true. Say you have a game lo
 while_loop_index = 1
 while while_loop_index < 10:
     print(while_loop_index)
-    while_loop_index += 1;
+    while_loop_index += 1
 
 '''
 A nested loop is a loop inside another loop. Say you need a loop that examines every pixel in an image. You could write a loop that looks at each pixel in a row and, inside that loop, add a second loop that looks at every pixel in the current column for that row.
@@ -153,19 +157,21 @@ A nested loop is a loop inside another loop. Say you need a loop that examines e
 print("----- Print Even Numbers ---------------------\n")
 
 
-def check_even_num_list(num_list):
-    # Return all the even number in the list
+def check_even_num_list(
+        num_list):  # Creating a function called check_even_num_list, This function when called returns even number
+    # Return all the even number in the list/ numlist is the series of numbers
 
     # placeholder variables
-    even_numbers = []
+    even_numbers = []  # creating a list of even numbers
 
-    for number in num_list:
-        if number % 2 == 0:
-            even_numbers.append(number)
-        else:
+    for number in num_list:  # for loop checks the list one at a time
+        if number % 2 == 0:  # if the number is divisible by 2 and get a 0
+            even_numbers.append(number)  # it puts it in the list of even numbers
+        else:  # otherwise it does nothing and moves to the next number
             pass
 
     return even_numbers
+
 
 print(check_even_num_list([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 

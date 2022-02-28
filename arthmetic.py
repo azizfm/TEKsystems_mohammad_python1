@@ -35,7 +35,7 @@ class Arithmetic:
         print(self)
 
 
-print("-----Example of a 'class' ----------")
+print("-----Practice ---Example of a 'class' ----------")
 
 class Computer:
     def config(self):

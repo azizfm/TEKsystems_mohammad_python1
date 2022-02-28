@@ -22,8 +22,9 @@ def introduction_with_default_args(first_name="John", last_name="Doe"):
 
 # function with a mix of default arguments
 # invoke this function with a mix of passing in zero arg, switch first name and last name arg, etc.
-def introduction_with_mix_of_default_args(first_name, last_name="Doe"):
+def introduction_with_mix_of_default_args(first_name, last_name="Mohammad"):
     print("Hi, my name is %s %s. Nice to meet you!\n" % (first_name, last_name))
+    print("Hi, my name is %s %s. Nice to meet you!\n" % (last_name, first_name))
 
 
 # function that returns value(s)
@@ -40,6 +41,7 @@ def add_all_nums(*nums):
     for num in nums:
         sums += num
     return sums
+    print(sums)
 
 
 double = lambda x: x * 2
